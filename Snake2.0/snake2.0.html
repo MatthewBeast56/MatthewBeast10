@@ -141,7 +141,7 @@
 
           } else if (!turn.length) {
 
-            if (confirm("YOU LOST!                                                                            WANT TO PLAY AGAIN?                                                                          (Note: You MUST press ok to play, or it WILL kick you!)                                                                                           Your Score was " + score)) {
+            if (confirm("YOU LOST!                                                                                                                                                      (Note: You MUST press ok to play, or it WILL kick you!)                                                                                           Your Score was " + score)) {
 
               ctx.clearRect(0, 0, 450, 300);
 
@@ -165,7 +165,7 @@
               placeFood();
             } else {
               window.clearInterval(interval);
-              window.location = "/projects/";
+              window.location = "/Snake2.0/snake.html";
             }
           }
 
