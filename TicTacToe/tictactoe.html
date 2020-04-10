@@ -1,0 +1,42 @@
+<html>
+<head>
+<script src="script.js" language="JavaScript" type="text/javascript"></script>
+<title>Tic-Tac-Toe</title>
+</head>
+<body>
+<center><h1><u>TIC-TAC-TOE</u></h1></center>
+<table>
+<tr>
+<td>
+<table border=1 style="margin-left:400px;margin-top:100px;">
+<tr>
+<td><a href="javascript:Move('A')"><img src="blank.jpg" border=0 height=100 width=100 id="A"></a></td>
+<td><a href="javascript:Move('B')"><img src="blank.jpg" border=0 height=100 width=100 id="B"></a></td>
+<td><a href="javascript:Move('C')"><img src="blank.jpg" border=0 height=100 width=100 id="C"></a></td>
+</tr>
+<tr>
+<td><a href="javascript:Move('D')"><img src="blank.jpg" border=0 height=100 width=100 id="D"></a></td>
+<td><a href="javascript:Move('E')"><img src="blank.jpg" border=0 height=100 width=100 id="E"></a></td>
+<td><a href="javascript:Move('F')"><img src="blank.jpg" border=0 height=100 width=100 id="F"></a></td>
+</tr>
+<tr>
+<td><a href="javascript:Move('G')"><img src="blank.jpg" border=0 height=100 width=100 id="G"></a></td>
+<td><a href="javascript:Move('H')"><img src="blank.jpg" border=0 height=100 width=100 id="H"></a></td>
+<td><a href="javascript:Move('I')"><img src="blank.jpg" border=0 height=100 width=100 id="I"></a></td>
+</tr>
+</table>
+</td>
+<td>
+<table style="margin-left:100px">
+<tr><td><input type=text size=5 id="player" value=0></td><td>Player</td></tr>
+<tr><td><input type=text size=5 id="computer" value=0></td><td>Computer</td></tr>
+<tr><td><input type=text size=5 id="ties" value=0></td><td>Ties</td></tr>
+</table>
+<input style="margin-left:100px; margin-top:20px;" type=button value="Reset" onClick="Reset();">
+&nbsp;&nbsp;&nbsp;
+<input style="margin-left:50px; margin-top:20px;" type=button value="Game Help" onClick="help();">
+</td>
+</tr>
+</table>
+</body>
+</html>
