@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Space Shooter</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Builds.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+   This is the first game I've ever made. <br>
+	It is a work in progress.<br>
+	Plans for future releases:<br>
+	--Enemy ships<br>
+	--Powerups<br>
+	--Special Weapons<br>
+	--Different Levels with different enemies with different abilities<br>
+	--Accuracy meter / "missed asteroids"<br>
+	--High score tracking w/ local database<br>
+	--Different playable ships
+	
+	<br><br>
+	
+	--Move using W,A,S,D or arrows<br>
+	--Shoot using left CTRL or left mouse click
+	
+	<br><br>
+	Build History: <br><br>
+	Version 1.0, May 26th 2018 18:04 CST<br>
+	--Initial implementation.  Just a ship that shoots asteroids.<br><br>
+	Version 1.1, May 26th 2018 23:28 CST<br>
+	--Added scrolling background and star field<br><br>
+	Version 1.2, May 27th 2018 18:21 CST<br>
+	--Added dynamic difficulty, reaching a maximum at level 30<br><br>
+	Version 1.3, May 28th 2018 13:01 CST<br>
+	--Made some UI changes for usability<br>
+	--Fixed a bug that was causing no sound for some users (Issue with ambisonic decoder)<br><br>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 600px; height: 900px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">Space Shooter</div>
+      </div>
+    </div>
+  </body>
+</html>
