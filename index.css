@@ -20,7 +20,7 @@ h1 {
   font-family: cursive;
   padding: 1px;
   text-align: center;
-  font-size: 36px;
+  font-size: 40px;
   font-weight: bold;
   text-transform: uppercase;
 
@@ -31,7 +31,7 @@ h1 {
   text-align: center;
   font-family: monospace;
   text-transform: uppercase;
-  font-size: 20;
+  font-size: 35;
   background: #678;
   border-style: dashed;
   border-color: oldlace;
