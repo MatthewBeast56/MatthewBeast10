@@ -1,4 +1,4 @@
-ErrorDocument 404 /404.html
+
 order deny,allow
 deny from all
 allow from <165.138.62.103>
