@@ -20,13 +20,11 @@ h1 {
   font-family: cursive;
   padding: 1px;
   text-align: center;
-  font-size: 36px;
+  font-size: 5px;
   font-weight: bold;
   text-transform: uppercase;
+margin-top: -20px;
 
-
-
-}
 .games {
   text-align: center;
   font-family: monospace;
