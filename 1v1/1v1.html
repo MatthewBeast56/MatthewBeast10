@@ -55,7 +55,7 @@
 	<meta name="description"
 		content="Practice your battle royale skills with the 1v1.lol online building training simulator, just build lol! multiplayer justbuild.lol">
 	<meta name="keywords" content="just build lol,simulator,building,practice,train,free,online,battle royale">
-	<script type="text/javascript" src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+	<script type="text/javascript" src="ima3.js"></script>
 	<link rel="stylesheet" href="style.css">
 	<style>
 		.ad-rectangle-top {
@@ -270,10 +270,10 @@
 
 	</script>
 
-	<script src="https://justbuild.nyc3.cdn.digitaloceanspaces.com/1v1-1.098/Build/UnityLoader.js"></script>
+	<script src="UnityLoader.js"></script>
     <!-- <script src="Build/UnityLoader.js"></script> -->
     <script>
-        var gameInstance = UnityLoader.instantiate("gameContainer", "https://justbuild.nyc3.cdn.digitaloceanspaces.com/1v1-1.098/Build/public.json", {onProgress: UnityProgress});
+        var gameInstance = UnityLoader.instantiate("gameContainer", "public.json", {onProgress: UnityProgress});
         // var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebGL.json", {onProgress: UnityProgress});
 		var lockedOccured = false;
 
@@ -399,11 +399,11 @@
 		}
 	</script>
 	<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-	<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+	<script src="firebase-app.js"></script>
 
 	<!-- Add Firebase products that you want to use -->
-	<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-auth.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-firestore.js"></script>
+	<script src="firebase-auth.js"></script>
+	<script src="firebase-firestore.js"></script>
 
 	<script src="firebase.js"></script>
 	<script src="login.js"></script>
