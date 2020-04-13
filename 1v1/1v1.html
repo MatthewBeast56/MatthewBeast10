@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<title>1v1.LOL - Online Building Simulator</title>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118283086-6"></script>
+	
 	<script>
 		window.dataLayer = window.dataLayer || [];
 
@@ -127,107 +127,7 @@
 	Object.defineProperty(window.performance.__proto__,"measures",Object.getOwnPropertyDescriptor(window.performance.__proto__,"now")),delete window.performance.__proto__.now,window.performance.__proto__.now={},Object.defineProperty(window.performance.__proto__,"now",{get:function(){return this.measures}}),Object.defineProperty(window.performance.__proto__,"now",{set:function(){Object.defineProperty(window.performance.__proto__,"now",{get:function(){return function(){return this.measures()/2}}})}});
 	</script>
 	<!-- MIDROLL/INTERSTITIAL VIDEO API -->
-	<script>
-		//init the interstitial 
-
-		var iAd;
-		cpmstarAPI(function (api) {
-			console.log("Setting iAD")
-			iAd = new api.game.InterstitialView("interstitial");
-			iAd.load();
-			iAd.addEventListener("ad_opened", function (e) {
-				iAdPause(); //Pause the game when ad is open 
-			});
-
-			iAd.addEventListener("ad_closed", function (e) {
-				setTimeout(function () {
-					iAdUnpause(); //Unpause when ad closed.  
-				}, 700);
-				iAd.load(); //Preload another ad. 
-			});
-		});
-
-		function iAdPause() {
-
-		}
-		function iAdUnpause() {
-			unityAdFinishedCallback()
-		}
-
-
-		function requestNewAd() {
-			console.log("requested AD")
-			console.log(iAd)
-			if (iAd && iAd.isLoaded()) {
-				iAd.show(); //Show loaded ad   
-			}
-			else {
-				if (iAd) iAd.load(); //If no ad available, load another      
-				unityAdFinishedCallback()
-			}
-		}
-
-		// This function calls Unity to tell the ad finished
-		function unityAdFinishedCallback() {
-			try {
-				if (gameInstance)
-					gameInstance.SendMessage('AdsManager', 'OnWebCallback');
-			}
-			catch (error) {
-				console.log(error);
-			}
-		}
-	</script>
-</head>
-
-<body>
-	<div id="generalModal" class="modal">
-		<div id="generalModalContent" class="modalContent"></div>
-	</div>
-
-	<div id="adsModal" class="modal">
-		<div id="content" class="modalContent">
-			<div id="adContainer"></div>
-			<video id="contentElement" hidden></video>
-		</div>
-	</div>
-
-	<div id="gameContainer"></div>
-	<div id="loader">
-		<img class="logo" src="logo.png">
-		<div class="spinner"></div>
-		<div class="progress">
-			<div class="full"></div>
-		</div>
-	</div>
-
-	<div class="ad ad-rectangle-top" id="adRectangleTop">
-		<!-- 1V1.LOL - 300X250A PLACEMENT TAG - PLACE INTO BODY (ZONE TAG REQUIRED) -->
-		<script>
-			(function (w, pid) {
-				var r = function (c, m) { c = c.split('').reduce(function (a, b) { return (a << 5) - a + b.charCodeAt(0) >>> m }, 0); return (10 + ((c * 7) % 26)).toString(36) + c.toString(36); }, y = r(w.location.href.split('#')[0], 1), c = r(w.location.href.split('#')[0] + pid, 0);
-				w.document.write('<div style="width:300px;height:250px" class="' + c + '"></div>');
-			})(window, 83023);
-		</script>
-	</div>
-	<div class="ad ad-rectangle-bottom" id="adRectangleBottom">
-		<!-- 1V1.LOL - 300X250B PLACEMENT TAG - PLACE INTO BODY (ZONE TAG REQUIRED) -->
-		<script>
-			(function (w, pid) {
-				var r = function (c, m) { c = c.split('').reduce(function (a, b) { return (a << 5) - a + b.charCodeAt(0) >>> m }, 0); return (10 + ((c * 7) % 26)).toString(36) + c.toString(36); }, y = r(w.location.href.split('#')[0], 1), c = r(w.location.href.split('#')[0] + pid, 0);
-				w.document.write('<div style="width:300px;height:250px" class="' + c + '"></div>');
-			})(window, 83025);
-		</script>
-	</div>
-	<div class="ad ad-leaderboard-bottom" id="adLeaderboardBottom">
-		<!-- 1V1.LOL - 728x90 PLACEMENT TAG - PLACE INTO BODY TO SET AD LOCATION -->
-		<script>
-			(function (w, pid) {
-				var r = function (c, m) { c = c.split('').reduce(function (a, b) { return (a << 5) - a + b.charCodeAt(0) >>> m }, 0); return (10 + ((c * 7) % 26)).toString(36) + c.toString(36); }, y = r(w.location.href.split('#')[0], 1), c = r(w.location.href.split('#')[0] + pid, 0);
-				w.document.write('<div class="' + c + '"></div>');
-			})(window, 83024);
-		</script>
-	</div>
+	
 
 	<script>
 		/* View in fullscreen */
