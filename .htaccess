@@ -1,5 +1,0 @@
-ErrorDocument 404 /404.html
-
-Order Deny,Allow
-Deny from all
-
