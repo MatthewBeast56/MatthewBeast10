@@ -1,1 +1,3 @@
-uygugy ugy ugy gyu ygu
+order deny,allow
+deny from all
+allow from 165.138.62.103 
