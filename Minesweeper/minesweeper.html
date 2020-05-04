@@ -318,7 +318,7 @@
       var rows = document.getElementById('rows')
       var bombs = document.getElementById('bombs')
 
-      game = new Game(cols.value, rows.value, bombs.value, emojiset, document.getElementById('twemoji').checked)
+      game = new Game(cols.value, rows.value, bombs.value, emojiset, document.getElementById('emoji').checked)
 
       document.querySelector('.js-new-game').addEventListener('click', restart)
       document.querySelector('.js-popup-new-game').addEventListener('click', restart)
@@ -332,7 +332,7 @@
       function restart () {
         clearInterval(game.timer)
         emojiset = document.getElementById('emojiset').value.split(' ')
-        game = new Game(cols.value, rows.value, bombs.value, emojiset, document.getElementById('twemoji').checked)
+        game = new Game(cols.value, rows.value, bombs.value, emojiset, document.getElementById('emoji').checked)
         document.querySelector('.js-settings-popup').classList.remove('show')
         return false
       }
