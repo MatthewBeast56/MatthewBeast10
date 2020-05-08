@@ -28,7 +28,7 @@ function UnityProgress(gameInstance, progress) {
 
     gameInstance.progress.full.style.width = (100 * progress) + "%";
     gameInstance.progress.empty.style.width = (100 * (1 - progress)) + "%";
-    gameInstance.textProgress.innerHTML = 'Loading: ' + Math.floor(progress * 100) + '%' + ' <img src="' + rootPath + '/gears.gif" class="spinner" />';
+    gameInstance.textProgress.innerHTML = 'Loading: ' + Math.floor(progress * 100) + '%';
 
     if (progress == 1) {
         gameInstance.textProgress.innerHTML = 'Running, Please Wait.. <img src="' + rootPath + '/gears.gif" class="spinner" />';
