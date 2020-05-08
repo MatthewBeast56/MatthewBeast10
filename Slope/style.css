@@ -28,7 +28,7 @@
     }
 
     .webgl-content .logo {
-        background: url('y8-logo.png') no-repeat center / contain;
+       
         width: 250px;
         height: 250px;
     }
@@ -40,7 +40,7 @@
     }
 
         .webgl-content .progress .empty {
-            background: url('progressEmpty.Light.png') no-repeat right / cover;
+           
             float: right;
             width: 100%;
             height: 100%;
@@ -48,7 +48,7 @@
         }
 
         .webgl-content .progress .full {
-            background: url('progressFull.Light.png') no-repeat left / cover;
+            
             float: left;
             width: 0%;
             height: 100%;
@@ -68,7 +68,7 @@
     }
 
     .webgl-content .logo.Dark {
-        //background-image: url('y8-logo.png');
+       
     }
 
     .webgl-content .progress.Dark .empty {
@@ -97,7 +97,7 @@
         }
 
         .webgl-content .footer .webgl-logo {
-            background-image: url('webgl-logo.png');
+            background-image: url('wegl-logo.png');
             width: 204px;
             float: left;
         }
