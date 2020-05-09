@@ -1,34 +1,23 @@
 
-
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Pixel Battle Royale</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
-    <script src="UnityProgress.js"></script>
+    <script src="UnityProgress.js"></script>  
     <script src="UnityLoader.js"></script>
-    <!-- -->
-    
-    
-    <!-- -->
     <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "pixel-battle-royale.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}});
+      var gameInstance = UnityLoader.instantiate("gameContainer", "pixel-battle-royale.json", {onProgress: UnityProgress});
     </script>
 </head>
-<body>
+  <body style="margin: 0; padding: 0">
     <div class="webgl-content">
-        <div id="gameContainer" style="width: 900px; height: 600px; margin: auto"></div>
-        <!-- -->
-     
-        <!-- -->
-        <div class="footer">
-            <div class="webgl-logo"></div>
-            <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-            <div class="title">Slope</div>
-        </div>
+      <div id="gameContainer" style="width: 800px; height: 500px"></div>
+      
+      </div>
     </div>
-</body>
+  </body>
 </html>
