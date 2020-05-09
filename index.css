@@ -17,6 +17,7 @@ h1 {
 
 
 .title {
+  background-image: url('games.png');
   font-family: cursive;
   padding: 1px;
   text-align: center;
