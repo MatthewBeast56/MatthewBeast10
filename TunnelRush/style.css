@@ -70,7 +70,7 @@
     }
 
     .webgl-content .logo.Dark {
-        background-image: url('progressLogo.Dark.png');
+        background-image: url('progressLogo.Dark.png') no-repeat right / cover;
         
     }
 
