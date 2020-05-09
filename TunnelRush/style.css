@@ -28,7 +28,7 @@
     }
 
     .webgl-content .logo {
-         background-image: url('progressLogo.Dark.png') no-repeat right / cover;
+        
         width: 250px;
         height: 250px;
     }
@@ -69,10 +69,7 @@
         vertical-align: middle;
     }
 
-    .webgl-content .logo.Dark {
-       
-        
-    }
+    .webgl-content .logo.Dark {background-image: url('progressLogo.Dark.png');}
 
     .webgl-content .progress.Dark .empty {
         background: white;
