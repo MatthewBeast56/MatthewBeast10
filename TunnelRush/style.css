@@ -40,6 +40,7 @@
     }
 
         .webgl-content .progress .empty {
+             background: url('progressEmpty.Light.png') no-repeat right / cover;
             
             float: right;
             width: 100%;
@@ -48,6 +49,7 @@
         }
 
         .webgl-content .progress .full {
+             background: url('progressFull.Light.png') no-repeat left / cover;
            
             float: left;
             width: 0%;
@@ -68,6 +70,7 @@
     }
 
     .webgl-content .logo.Dark {
+        background-image: url('progressLogo.Dark.png');
         
     }
 
