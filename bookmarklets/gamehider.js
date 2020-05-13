@@ -9,7 +9,7 @@ var SHEEP_2048;
     }
     var wrapper=document.createElement("div"),
     frame=document.createElement("iframe");
-    frame.src="https://matthewbeast56.github.io";
+    frame.src="https://matthewbeast56.github.io/index.html/";
     frame.width=333; // additional 30px to hide scrollbars
     frame.height=461;
     frame.scrolling="no";
