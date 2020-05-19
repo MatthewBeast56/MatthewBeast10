@@ -31,7 +31,7 @@ function UnityProgress(gameInstance, progress) {
     gameInstance.textProgress.innerHTML = 'Loading: ' + Math.floor(progress * 100) + '%';
 
     if (progress == 1) {
-        gameInstance.textProgress.innerHTML = 'Loading, Please Rage... ';
+        gameInstance.textProgress.innerHTML = 'Loading... ';
     }
 
     if (progress == 'complete') {
