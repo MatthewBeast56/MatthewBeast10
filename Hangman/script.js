@@ -34,7 +34,7 @@ function displayWord() {
 	const innerWord = wordEl.innerText.replace(/\n/g, '');
 
 	if (innerWord === selectedWord) {
-		finalMessage.innerText = 'Congratulations! You won! ðŸ˜ƒ';
+		finalMessage.innerText = 'Congratulations! You won!';
 		popup.style.display = 'flex';
 
 		playable = false;
@@ -62,7 +62,7 @@ function updateWrongLettersEl() {
 
 	// Check if lost
 	if (wrongLetters.length === figureParts.length) {
-		finalMessage.innerText = 'Unfortunately you lost. ðŸ˜•';
+		finalMessage.innerText = 'Unfortunately you lost.';
 		popup.style.display = 'flex';
 
 		playable = false;
