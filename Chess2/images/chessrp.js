@@ -25,7 +25,7 @@ s+='<span id="timer1"></span>'
 s+='</div>'
 s+='</div>'
 s+='<div style="position: relative; width:'+my.bdWd+'px; height:'+my.bdWd+'px;  text-align:center; margin:auto;">';s+='<div id="board" style="position: absolute; top: 0;"></div> ';s+='<div id="mouser" style="position: absolute; top: 0; width:'+my.bdWd+'px; height:'+my.bdWd+'px;"></div> ';s+='<div id="drag" style="position:absolute; pointer-events: none; "></div>';s+='</div>';s+=optPopHTML();s+='<div style="position: relative; margin: 5px 0 0 0; width:'+my.bdWd+'px; height: 100px; ">';s+='<textarea style="width:99%; height: 100px;" id="movelist"></textarea>';s+='</div>';if(false){s+='<div>';s+='<a id="AnalysisToggleLink" href="UIAnalyzeToggle()">Analysis: Off</a>';s+='</div>';}
-s+='<div id="output" style="display: none;"></div>';s+='<input id="FenTextBox" style="width:'+my.bdWd+'px; display: none;" onchange="UIChangeFEN()"/>';s+='<div style="position:relative; margin: 5px 0 0 0; text-align:center;font: 10px Arial; color: #aaa;">&copy; 2020 MathsIsFun.com  v'+version+'</div>';s+='</div>';document.write(s);soundToggle()
+s+='<div id="output" style="display: none;"></div>';s+='<input id="FenTextBox" style="width:'+my.bdWd+'px; display: none;" onchange="UIChangeFEN()"/>';s+='<div style="position:relative; margin: 5px 0 0 0; text-align:center;font: 10px Arial; color: #aaa;"></div>';s+='</div>';document.write(s);soundToggle()
 for(var i=0;i<my.players.length;i++){my.players[i].clock=new DigiClock(27,'24','timer'+i)}
 el=document.getElementById('mouser');el.addEventListener("mousedown",onMouseDown,false);el.addEventListener('touchstart',ontouchstart,false);optpop();}
 function playerChg(){my.playerNum=1-my.playerNum
