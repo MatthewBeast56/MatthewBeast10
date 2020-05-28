@@ -6,7 +6,7 @@ my.players=[{name:"O",type:my.playerTypes[0],score:0},{name:"X",type:my.playerTy
 my.playerStartN=0
 my.AI=new AI()
 my.activeQ=false
-var s='';my.sndHome=(document.domain=='localhost')?'/mathsisfun/images/sounds/':'/images/sounds/'
+var s='';my.sndHome=(document.domain=='localhost')?'/images/sounds/':'/images/sounds/'
 s+='<audio id="sndWin" src="'+my.sndHome+'yes2.mp3" preload="auto"></audio>';s+='<audio id="sndDrop" src="'+my.sndHome+'click1.mp3" preload="auto"></audio>';s+='<audio id="sndDraw" src="'+my.sndHome+'wibble.mp3" preload="auto"></audio>'
 my.snds=[];s+='<div id="main" style="position:relative; width:'+w+'px; min-height:'+h+'px; background-xnor: white; margin:auto; display:block; border: 1px solid black; border-radius: 10px;">';s+='<div id="top" style="font: 24px Arial; text-align:center; margin-top:3px; height:34px">'
 s+='<div id="btns" style="position:absolute; left: 3px; font: 18px Arial;">'
