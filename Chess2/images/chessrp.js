@@ -6,7 +6,7 @@ my.bdWd=my.pcWd*my.bdSize
 my.bdHt=my.bdWd
 my.flipQ=true
 my.dragQ=false;my.players=[{name:'White',clr:'white',typ:0,time:'endless',style:'drop-shadow(2px 2px 5px #88f) drop-shadow(-2px -2px 5px #88f)'},{name:'Black',clr:'black',typ:1,time:'endless',style:'drop-shadow(2px 2px 5px #f88) drop-shadow(-2px -2px 5px #f88)'}];my.playerNum=0
-my.playerTypes=['Human','Computer (Beginner)','Computer (Medium)','Computer (Challenging)','Computer (Hard)'];my.imgSets=[{name:'Standard',prefix:'std',ext:'.png'},{name:'Maya',prefix:'maya',ext:'.svg'},{name:'Leipzig',prefix:'lpz',ext:'.svg'},{name:'Merida',prefix:'mer',ext:'.svg'},];my.imgSetN=0
+my.playerTypes=['Human','Computer (Beginner)','Computer (Medium)','Computer (Challenging)','Computer (Hard)'];my.imgSets=[{name:'Standard',prefix:'std',ext:'.png'},];my.imgSetN=0
 my.times=[{name:'Endless',mm:60},{name:'1 Hour',mm:60},{name:'30 min',mm:30},{name:'20 min',mm:20},{name:'15 min',mm:15},{name:'10 min',mm:10},{name:'7 min',mm:7},{name:'5 min',mm:5}];my.timeN=0
 var s=''
 s+='<audio id="sndmove" src="../images/sounds/clook.mp3" preload="auto"></audio>'
