@@ -1,0 +1,304 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+		<title>Free Tetris: the classic arcade game is back- eChalk</title>
+
+		<meta name="description" content="Simply the best free Tetris game on the web; mobile friendly, no adverts and optimised for touch screens and keyboards (iPads, iPhones, Kindles, Android and any HTML5 enabled browser)." />
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="requiresActiveX=true" />
+		<meta name="keywords" content="eChalk,  free, interactive, education, resources, whiteboard, data, projector, whole, class, GCSE, science, maths, A level, Keystage, 1, 2, 3, 4, KS, Primary, Secondary, education, flash, shockwave, teachers, teaching, england, scotland, wales, ireland, UK, U.K., whiteboard, training, games, puzzles, quizes, lessons, activities, whole-class, HTML5, apps, iOS, Android, Kindle" />
+		<meta name="author" content="Dr Iestyn B Jones, eChalk Ltd" />
+		<meta name="owner" content="Dr Iestyn B Jones, eChalk Ltd" />
+		<meta name="rating" content="general" />
+		<meta name="language" content="en" />
+		<meta name="robots" content="All" />
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta http-equiv="expires" content="-1" />
+		
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+		
+	
+		<!-- Web app icons for iOS -->
+		<link rel="apple-touch-icon" href="shareIcons/touch-icon-iphone.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="shareIcons/touch-icon-ipad.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="shareIcons/touch-icon-iphone-retina.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="shareIcons/touch-icon-ipad-retina.png" />
+		
+		<!-- Web app icons for Android -->
+		<link rel="icon" sizes="128x128" href="shareIcons/web-app-icon-android.png" />
+		<link rel="icon" sizes="192x192" href="shareIcons/web-app-icon-android-high-res.png" />
+		
+		
+		<script type="text/javascript" src="device.min.js"></script>
+		
+		<script type="text/javascript" src="FlashAndHTML5ResourceV2.js"></script>
+
+		<script type="text/javascript" src="swfobject.js"></script>
+		<script type="text/javascript" src=jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="eChalkUtils.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="ResourcePage.css" />
+		
+		<script type="text/javascript">
+
+			$(function()
+			{
+				pageInit();
+			});
+			
+			/**
+			 * OVERRIDE the FlashAndHTML5ResourceV2.js runHTML5CompatibilityTests funciton
+			 * in order to remove the small screen warning for phones, as the resources
+			 * has been designed for phones from the off.
+			 *
+			 * Run a series of compatibility checks, in order or importance, and return false
+			 * indicating a fail (i.e. canvas shouldn't be loaded immediately).
+			 */
+			function runHTML5CompatibilityTests()
+			{
+				/*
+				 * Check if the device supports canvas. If this fails at this point
+				 * we know that the device supports neither Flash nor HTML5, so display
+				 * an end-of error message.
+				 */
+				if (!HTML5Utils.supportsCanvas())
+				{
+					// at this point, we know the device does not support flash or html5 canvas
+					$("#noCanvasNoFlash").css('display', 'inline');
+					return HTML5Utils.NO_COMPATIBILITY;
+				}
+				
+				/*
+				 * Check if the user is running an old version of Android (< v3)
+				 */
+				if (!HTML5Utils.isCompatibleAndroidVersion())
+				{
+					$("#badAndroidVersion").css('display', 'inline');
+					
+					if (HTML5Utils.isScreenTooSmall())
+					{
+						upScaleForSmallScreens();
+					}
+					return HTML5Utils.NO_COMPATIBILITY;
+				}
+				
+				/*
+				 * Check if the user is running an old version of iOS (< v6)
+				 */
+				if (!HTML5Utils.isCompatibleIOSVersion())
+				{
+					$("#badIOSVersion").css('display', 'inline');
+					
+					if (HTML5Utils.isScreenTooSmall())
+					{
+						upScaleForSmallScreens();
+					}
+					return HTML5Utils.NO_COMPATIBILITY;
+				}
+				
+				/*
+				 * Check if the device is a playbook
+				 */
+				if (HTML5Utils.isPlaybook())
+				{
+					$("#isPlaybook").css('display', 'inline');
+					
+					return HTML5Utils.PARTIAL_COMPATIBILITY;
+				}
+				
+				/*
+				 * Check if the device is a Windows phone
+				 */
+				if (HTML5Utils.isWindowsPhone())
+				{
+					upScaleForSmallScreens();
+					$("#isWindowsPhone").css('display', 'inline');
+					
+					return HTML5Utils.PARTIAL_COMPATIBILITY;
+				}
+				
+				/*
+				 * Check screen dimensions are large enough for our resources
+				 * REMOVED:
+				if (HTML5Utils.isScreenTooSmall())
+				{
+					recordSmallScreenStat();
+					
+					upScaleForSmallScreens();
+					
+					$("#smallScreen").css('display', 'inline');
+					
+					return HTML5Utils.PARTIAL_COMPATIBILITY;
+				}
+				 */
+				
+				// It has passed all the tests. Return true
+				return HTML5Utils.FULLY_COMPATIBLE;
+			}
+			
+			function pageInit()
+			{
+				window.flashvars = {};
+				window.params = {};
+				swfobject.embedSWF("streamer_11.4.swf", "flashcontent", "100%", "100%", "11.4", "", flashvars , params, null, swfobject_loadComplete);
+			}
+			
+		</script>
+
+		<style type="text/css">
+			
+			body {
+				background-color: #DDEEFF;
+			}
+			
+			a.homepageLink
+			{
+				color: #000000;
+				text-decoration: none;
+			}
+			
+			a#mainLink:hover
+			{
+				text-decoration: underline;
+			}
+		</style>
+
+    </head>
+    <body>
+		
+        <div id="flashcontent">
+			<div id="noflash">
+				<div id="container">
+					<div id="header">
+						<div id="logo">
+							<div id="divSplash">
+								<div id="divImgSplash">
+									<img id="imgSplashLogo" src="siteLogo.png" alt="eChalk" />
+								</div>
+								<div id="divSplashStrapText">
+									...learning for the fun of it!
+								</div>
+							</div>
+						</div>
+					</div>
+					
+						<div id="titlebar">
+		<div id="textDiv">This resource works with HTML5 or Flash.</div>
+		<div id="linkDiv">
+			<a href="http://www.adobe.com/go/getflashplayer"><img src="getAdobeFlashPlayer.gif" style="width: 160px; height: 41px; border: none;" alt="Adobe Flash Player" /></a>
+		</div>
+	</div>
+	<div id="contentdiv">
+		<div id="content" style="min-height: 350px">
+			<div id="contentcenter">
+				<p id="title">eChalk has gone mobile!</p>
+				<p id="overviewText">
+					This activity will run on any browser that supports Flash or a modern browser with HTML5 support. This includes mobile devices such as iPads, Kindle and Android tablets as well as PCs or Macs.
+				</p>
+				<div id="compatibilityChecks">
+					<h3>Compatibility tests:</h3>
+					<table id="tblCompatibilityChecks">
+						<tr id="noJavaScript" style="display: inline">
+							<td>
+								<img class="failedImage" alt="Failed" src="cross.png" />
+							</td>
+							<td>
+								Please enable JavaScript in your browser to run this resource.
+							</td>
+						</tr>
+						<tr id="noCanvasNoFlash">
+							<td>
+								<img class="failedImage" alt="Failed" src="cross.png" />
+							</td>
+							<td>
+								We have detected that your browser does not support Adobe Flash or HTML5 to the required level (specifically it needs to support the 'canvas' element). If you can update your current browser or install a modern one we recommend that you do so. Download Flash here: <br /> 
+								<a href="http://www.adobe.com/"><img src="getAdobeFlashPlayer.gif" style="width: 160px; height: 41px; border: none;" alt="Adobe Flash Player" /></a>
+							</td>
+						</tr>
+						<tr id="badAndroidVersion">
+							<td>
+								<img class="failedImage" alt="Failed" src="cross.png" />
+							</td>
+							<td>
+								<h4>Android version too old</h4>
+								<p>
+									We have detected that you are running an incompatible version of Android. Android operating systems less than Android Version 3 are not supported due to performance issues. Please try again on a modern browser that supports Flash or HTML5 or on a more modern tablet device.
+								</p>
+							</td>
+						</tr>
+						<tr id="badIOSVersion">
+							<td>
+								<img class="failedImage" alt="Failed" src="cross.png" />
+							</td>
+							<td>
+								<h4>iOS version too old</h4>
+								<p>
+									We have detected that you are running an incompatible version of iOS. iOS operating systems less than iOS6 are not supported due to performance issues. Please try again on a modern browser that supports Flash or HTML5 or on a more modern tablet device.
+								</p>
+							</td>
+						</tr>
+						<tr id="isPlaybook">
+							<td>
+								<img class="warningImage" alt="Warning" src="warning.png" />
+							</td>
+							<td>
+								<h4>Note about Blackberry tablets</h4>
+								<p>
+									We have detected that you are trying to access this resource on a Blackberry tablet. Please be aware that some features may not work on this device.
+								</p>
+							</td>
+						</tr>
+						<tr id="isWindowsPhone">
+							<td>
+								<img class="warningImage" alt="Warning" src="warning.png" />
+							</td>
+							<td>
+								<h4>Note about Windows phones</h4>
+								<p>
+									We have detected that you are trying to access this resource on a Windows Phone. Please be aware that some features may not work on this device, and you may find that performance is impacted and buttons are too small to press.
+								</p>
+							</td>
+						</tr>
+						<tr id="smallScreen">
+							<td>
+								<img class="warningImage" alt="Warning" src="warning.png" />
+							</td>
+							<td>
+								<h4>Small screen warning</h4>
+								<p>
+									This resource works best on large screens.
+								</p>
+							</td>
+						</tr>
+					</table>
+					<div id="divProceedAnyway">
+						<a id="btnProceedAnyway" class="btnSubPre">
+							<p>Proceed anyway?</p>
+						</a>
+					</div>
+				</div>
+				<p>
+					For more <a href="http://www.echalk.co.uk" class="homepageLink">educational games</a>, check out <a href="http://www.echalk.co.uk" class="homepageLink" id="mainLink">www.echalk.co.uk</a>
+				</p>
+				<p>
+					You can take a look at our other interactive mobile content<br /> by clicking the button below:
+				</p>
+				<div id="appbutton">
+					<a title="View our mobile content" class="btnSubPre" id="btnMobileContent">
+						<img src="btnMobileContent.png" alt="View more of our interactive mobile content" />
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+				</div>
+			</div>
+		</div>
+
+    </body>
+</html>
