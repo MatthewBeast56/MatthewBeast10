@@ -28,7 +28,7 @@ s+='</div>';}
 s+='<div id="hist" style="font: 14px arial; color: green; position:absolute; left:5px; bottom:-40px; text-align:left;">History</div>';s+='<div style="font: 9px arial; color: gold; position:absolute; right:10px; bottom:-50px;"></div>';s+='</div>';document.write(s);for(var row=0;row<ROWS;row++){board[row]=[];for(var col=0;col<COLS;col++){board[row][col]=0;}}
 fill_lines()
 linesShow(linecoords)
-my.img=new Image();my.img.setAttribute('crossOrigin','anonymous');my.img.src="images/connect.svg";if(my.img.complete){loaded()}else{my.img.addEventListener('load',loaded)}
+my.img=new Image();my.img.setAttribute('crossOrigin','anonymous');my.img.src="..images/connect.svg";if(my.img.complete){loaded()}else{my.img.addEventListener('load',loaded)}
 gameActive=1;redScore=0;bluScore=0;scoreUpdate();whosFirst=RedNum;if(whosFirst==RedNum){msg(playerName(RedNum)+"'s turn");whosTurn=BluNum;switchTurns();whosFirst=RedNum;}else{msg(playerName(BluNum)+"'s turn");whosTurn=RedNum;switchTurns();whosFirst=BluNum;}
 popOpen();}
 function histClear(){console.log('histClear')
