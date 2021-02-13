@@ -4,35 +4,7 @@
       "location": "gun-mayhem-2.swf",
       "title": "Gun Mayhem 2",
       "author": "NA",
-      "authorLink": "NA",
-      "type": "Game"
-    },
-    {
-      "location": "iTest.swf",
-      "title": "PowerTest",
-      "author": "NA",
       "authorLink": "",
-      "type": "Game"
-    },
-    {
-      "location": "swfs/synj1.swf",
-      "title": "Synj vs. Horrid Part 1",
-      "author": "Dan Paladin",
-      "authorLink": "https://www.thebehemoth.com",
-      "type": "Game"
-    },
-    {
-      "location": "swfs/synj2.swf",
-      "title": "Synj vs. Horrid Part 2",
-      "author": "Dan Paladin",
-      "authorLink": "https://www.thebehemoth.com",
-      "type": "Game"
-    },
-    {
-      "location": "swfs/wasted_sky.swf",
-      "title": "Wasted Sky",
-      "author": "Tom Fulp",
-      "authorLink": "https://www.newgrounds.com",
       "type": "Game"
     }
   ]
