@@ -10,25 +10,18 @@
     <body>
         <div id="nav">
             <div id="title">
-                <a href="https://ruffle.rs/" target="_blank">
-                    <img
-                        src="https://ruffle.rs/assets/logo.png"
-                        alt="Ruffle"
-                        data-canonical-src="https://ruffle.rs/assets/logo.png"
-                    />
-                </a>
+                
             </div>
             <div id="file-picker">
                 <div id="local-file-container">
                     <span>dont mind this --></span>
-                    <input type="file" accept="" id="local-file" />
+                    <input type="file" accept=".wasm" id="local-file" />
                 </div>
                 <div id="sample-swfs-container">
-                    <span id="sample-swfs-label">Sample SWF:</span>
+                    <span id="sample-swfs-label">Game:</span>
                     <select id="sample-swfs">
-                        <option value="none">None</option>
-                        <optgroup id="anim-optgroup" label="Animations"></optgroup>
-                        <optgroup id="games-optgroup" label="Games"></optgroup>
+                       
+                        <optgroup id="games-optgroup" label="Game:"></optgroup>
                     </select>
                     <div id="author-container">
                         <span>Author: </span><a href="#" target="_blank" id="author"></a>
