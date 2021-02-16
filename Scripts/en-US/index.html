@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr"><head><meta charset="utf-8"><link rel="stylesheet" href="css/dist-makerstrap.min.css"><link rel="stylesheet" href="css/stylesheets-style.css"><link rel="stylesheet" href="css/stylesheets-dialog.css"><link rel="stylesheet" href="css/stylesheets-hierarchic-source-code.css"><link rel="stylesheet" id="webxray" href="css/x-ray-goggles.mouse.org-webxray.css"><link rel="stylesheet" href="css/x-ray-goggles.mouse.org-tipsy.css"><link rel="stylesheet" href="css/lib-codemirror.css"><link rel="stylesheet" href="css/stylesheets-jsbin-codemirror-theme.css"><link rel="stylesheet" href="css/stylesheets-easy-dialog-remix.css"><title>Remix Dialog</title><script src="js/x-ray-goggles.mouse.org-jquery.min.js"></script><script src="js/x-ray-goggles.mouse.org-jquery.tipsy.js"></script><script src="js/x-ray-goggles.mouse.org-jquery.scrollTo-min.js"></script><script src="js/lib-codemirror.js"></script><script src="js/xml-xml.js"></script><script src="js/javascript-javascript.js"></script><script src="js/css-css.js"></script><script src="js/htmlmixed-htmlmixed.js"></script><script src="js/easy-remix-dialog-render-dom.js"></script><script src="js/easy-remix-dialog-edit-dom.js"></script><script src="js/easy-remix-dialog-html-editor.js"></script><script src="js/src-utils.js"></script><script src="js/src-tag-colors.js"></script><script src="js/src-event-emitter.js"></script><script src="js/webmaker-i18n-localized.js"></script><style>
+      iframe {
+        display: none;
+      }
+      div button {
+        display: block;
+        margin: 1rem;
+        width: 9rem;
+      }
+      div button tab {
+        border: none;
+        background: inherit;
+        color: white;
+      }
+      div button tab hidden {
+        display: none;
+      }
+      body {
+        background: inherit;
+        overflow: hidden;
+      }
+    </style><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-156156635-1"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-156156635-1');
+    </script></head><body>
+
+    <div class="dialog">
+
+      <div id="dom-rendering-column" class="pane split">
+        <div id="dom-rendering"></div>
+      </div>
+
+      <iframe id="preview" scrolling="no" src="blank.html"></iframe>
+
+      <div>
+        <button class="btn btn-primary" id="ok">Update</button>
+        <button class="btn btn-default" id="nevermind">Cancel</button>
+
+        <button class="tab hidden" id="pretty">Basic</button>
+        <button class="tab selected hidden" id="raw">Advanced</button>
+      </div>
+
+    </div>
+
+    <script src="js/x-ray-goggles.mouse.org-easy-remix-dialog.js"></script></body></html>
