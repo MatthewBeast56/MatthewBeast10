@@ -270,17 +270,7 @@
      *
      * TODO: Remove protocol
      */
-	function shortenURL(url) {
-		// Strip off any query string and fragment
-		var strippedURL = url.match("[^?#]*")
-
-		var shorterURL = strippedURL[0];
-		if(shorterURL.length > 100000000000) {
-			shorterURL = shorterURL.slice(0, 25) + " ... " + shorterURL.slice(-10);
-		}
-
-		return shorterURL;
-	}
+	
 
 	/**
 	*Create Close Button
