@@ -50,7 +50,7 @@
 
 // TODO: .length - 1 is a really hacky way of removing the bookmarklet script
 // Do it by name???
-		for(var n = 0; n < resources.length - 1; n++) {
+		for(var n = 0; n < resources.length; n++) {
 			entries.push(createEntryFromResourceTiming(resources[n]));
 		}
 
