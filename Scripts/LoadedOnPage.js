@@ -289,7 +289,7 @@
 	function createCloseBtn(){
 		var btnEle = d.createElement('span');
 		btnEle.innerHTML = 'x';
-		btnEle.style.cssText = 'position:absolute;margin:-3px 5px;right:0;font-size:22px;cursor:pointer';
+		btnEle.style.cssText = 'position:absolute;margin:-3px 5px;left:0;font-size:22px;cursor:pointer';
 		addEvent(btnEle,'click',closeBtnHandler);
 		return btnEle;
 	}
