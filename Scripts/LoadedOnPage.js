@@ -272,7 +272,7 @@
      */
 	function shortenURL(url) {
 		// Strip off any query string and fragment
-		var strippedURL = url.match("[?#]*")
+		var strippedURL = url.match("[^]*")
 
 		var shorterURL = strippedURL[0];
 
