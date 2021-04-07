@@ -1,0 +1,76 @@
+[
+  {
+    "id" : "86Z-55W-495Z",
+    "g" : "-v806919f9258546e49eeb564caee9ac22",
+    "tk" : "055-16b",
+    "frs" : false,
+    "tlc" : [
+
+    ],
+    "regURLs" : [
+      "fb2019038794982939"
+    ],
+    "type" : "meta",
+    "af" : {
+      "Carrier" : "Verizon",
+      "wdt" : "1.96",
+      "OS Version" : "14.4.1",
+      "Version" : "7.6.0",
+      "Build" : "18",
+      "Model" : "iPhone8,4",
+      "ifv" : "806919f9258546e49eeb564caee9ac22",
+      "ifaA" : false,
+      "SDK Version" : "30801",
+      "useIP" : false,
+      "OS" : "iOS",
+      "hgt" : "3.48",
+      "Make" : "Apple"
+    },
+    "ddnd" : 0,
+    "arp" : {
+      "id" : "86Z-55W-495Z",
+      "wdt" : 1.96,
+      "i_n" : "ZmpkfAUDBAZj",
+      "d_ts" : 1617743630,
+      "d_e" : [
+        "InAppMessageSolutionScreen",
+        "Charged",
+        "InAppOessageSolutionScreen",
+        "SessionStart",
+        "InA̽�lӍ�\t#��Mcreen"
+      ],
+      "j_s" : "{ }",
+      "j_n" : "ZG1negEAAwc=",
+      "e_ts" : 0,
+      "dh" : -451054730,
+      "sv" : 30801,
+      "r_ts" : 1617758666,
+      "k_n" : "[ \"139C7A55-A184-4F2A-8589-EA0775ECAF03\"]",
+      "hgt" : 3.48,
+      "v" : 1,
+      "av" : "7.6.0"
+    },
+    "l_ts" : 0,
+    "f_ts" : 1616520689,
+    "imp" : 0
+  },
+  {
+    "f" : false,
+    "dsync" : true,
+    "profile" : {
+      "tz" : "America/New_York",
+      "pm_age" : 42,
+      "iam" : "Student",
+      "Carrier" : "Verizon",
+      "subscribed" : true,
+      "country" : "US",
+      "MSG-push" : false
+    },
+    "pg" : 1,
+    "ep" : 1617758699,
+    "n" : "_bg",
+    "type" : "profile",
+    "s" : 1617758653,
+    "lsl" : 74
+  }
+]
